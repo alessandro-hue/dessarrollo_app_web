@@ -4,17 +4,15 @@
     outline: solid 1px gray;
 }
 
-.negro{
+.container{
     background-color: black;
     width: px;
-    height: 150px;
+    height: 200px;
     color: white;
+    margin: auto;
     margin-top: 20px;
-    
 }
-.morado{
-    background-color: blueviolet;
-    width: 1px;
-    height: 150px;
-    margin-top: 20px;
+
+.texto{
+
 }
