@@ -4,10 +4,17 @@
     outline: solid 1px gray;
 }
 
-.color_humilde{
+.negro{
     background-color: black;
     width: px;
     height: 150px;
     color: white;
+    margin-top: 20px;
+    
+}
+.morado{
+    background-color: blueviolet;
+    width: 1px;
+    height: 150px;
     margin-top: 20px;
 }
