@@ -9,7 +9,6 @@
     height: 250px;
     margin: auto;
     margin-top: 40px;
-    border: solid 60px grey;
     color: white;
 }
 
@@ -53,8 +52,10 @@ span{
 
 h2{
     color: white;
+    font-style: italic;
 }
 
 h3{
     color: black;
+    text-decoration: underline;
 }
