@@ -1,18 +1,60 @@
 *{
     margin: 0;
     padding: 0;
-    outline: solid 1px gray;
+    /*outline: solid 1px gray;*/
 }
 
 .container{
-    background-color: black;
-    width: px;
-    height: 200px;
-    color: white;
+    width: 850px;
+    height: 250px;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 40px;
+    border: solid 60px grey;
+    color: white;
+}
+
+.left{
+    display: block;
+    height: 100%;
+    flex: 1;
+}
+
+.titulo{
+    background-color: black;
+    text-align: start;
+}
+
+h1{
+    color: white;
+}
+
+span{
+    color: aqua;
 }
 
 .texto{
+    background-color: blueviolet;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    
+}
 
+.contacto{
+    background-color: rgb(135, 190, 235);
+    text-align: end;
+    font-size: 20px;
+}
+
+.titulo, .texto, .contacto{
+    padding: 19px;
+    margin-bottom: 30px;
+}
+
+h2{
+    color: white;
+}
+
+h3{
+    color: black;
 }
