@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* outline: solid 1px blue;*/
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 100px;
+}
+
+.margin{
+    background-color: rgb(245, 140, 3);
+    padding: 60px;
+}
+
+.padding{
+    background-color: blue;
+    padding: 100px;
+    border: 100px;
+}
+
+.border{
+    background-color: sandybrown;
+    padding: 100px;
+}
+
