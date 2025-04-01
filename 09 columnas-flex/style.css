@@ -10,7 +10,7 @@
 
 .col{
     flex: 1;
-    height: 150px;
+    height: 70px;
     margin: 10px 10px;
     background-color: #5a99a1;
     color: white;
@@ -18,7 +18,7 @@
 
 .col2{
     color: white;
-    height: 150px;
+    height: 70px;
     flex: 2;
     margin: 10px 10px;
     background-color:  #5a99a1;
@@ -27,7 +27,7 @@
 .col3{
     color: white;
     flex: 3;
-    height: 150px;
+    height: 70px;
     margin: 10px 10px ;
     background-color:  #5a99a1;
 }
