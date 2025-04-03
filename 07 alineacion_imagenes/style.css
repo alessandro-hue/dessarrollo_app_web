@@ -1,0 +1,31 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    outline: solid 1px black;
+}
+
+.container{
+    margin: 0 auto;
+    width: 700px;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+
+}
+
+img{
+    height: 200px;
+    
+}
+
+.main{
+
+}
+
+.row{
+    margin: 100px;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+}
