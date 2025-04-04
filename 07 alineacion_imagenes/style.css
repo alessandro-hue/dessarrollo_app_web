@@ -6,26 +6,27 @@
 
 .container{
     margin: 0 auto;
-    width: 700px;
-    height: 100px;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-
+    width: 800px;
+    text-align: center;
 }
 
 img{
     height: 200px;
-    
-}
-
-.main{
-
+    background-color: white;
 }
 
 .row{
-    margin: 100px;
-    height: 200px;
+    padding: 10px 0px;
     display: flex;
     justify-content: space-around;
+    margin-bottom: 10px;
+}
+.black{
+    background-color: black;
+}
+.purple{
+    background-color: purple;
+}
+.green{
+    background-color: green;
 }
