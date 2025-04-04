@@ -1,0 +1,40 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    outline: solid 1px brown;
+}
+
+.nav{
+    background-color: black;
+    height: 100px;
+}
+
+.nav-title{
+display: flex;
+}
+
+
+.nav-link{
+    display: flex;
+    gap: 20px;
+}
+
+
+li{
+    list-style-type: none; /*quita viñetas de elemento lista*/
+    color: white;
+    
+}
+
+a{
+    margin: 10px;
+    text-decoration: none; /*quita decoracion de etiqueta anchor*/
+    color: white;
+
+
+}
+
+h1{
+    color: white;
+    font-size: 25px;
+}
