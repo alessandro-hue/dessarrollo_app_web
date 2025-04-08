@@ -21,14 +21,14 @@ display: flex;
 
 
 li{
-    list-style-type: none; /*quita viñetas de elemento lista*/
+    list-style-type: none;
     color: white;
     
 }
 
 a{
     margin: 10px;
-    text-decoration: none; /*quita decoracion de etiqueta anchor*/
+    text-decoration: none; 
     color: white;
 
 
