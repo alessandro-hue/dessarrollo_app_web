@@ -12,29 +12,43 @@
 
 .celeste{
     background-color: #42a3b9;
-    height: 200px;
+    height: 150px;
     width: 100%;
     margin: 0 auto;
     margin-top: 50px;
 }
 
 .user{
-    height: 160px;
-    margin-top: 20px;
+    height: 130px;
+    margin-top: 70px;
     margin-left: 30px;
-
+    border: solid 5px white;
+    border-radius: 100px;
 }
 
 .peque{
     width: 12px;
     margin-top: 10px;
+    margin-left: 10px;
 }
 
 .ubis{
     width: 15px;
     margin-top: 10px;
+    margin-left: 10px;
+
 }
 
 .bajar{
     margin-top: 10px;
+    margin-left: 20px;
+}
+
+.whiter{
+    background-color: white;
+    height: 160px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-left: 10px;
 }
