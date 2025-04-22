@@ -1,6 +1,64 @@
 *{
     margin: 0px;
     padding: 0px;
-    outline: solid 1px brown;
+    /*utline: solid 1px brown;*/
 }
 
+.container{
+    width: 100%;
+    display: flex;
+
+
+}
+
+/*alineacion de imaganes y texto*/
+.izquierda{
+    flex:1;
+    margin-top: 50px;
+}
+.derecha{
+    flex:4;
+}
+
+.name{
+    color: #332e54;
+}
+
+.titulo1{
+    margin: 0 auto;
+    color: #332e54;
+    text-align: center;
+}
+
+.texto1{
+    color: #aca9b9;
+    text-align: center;
+}
+
+/*alineacion de imagenes*/
+.foto{
+    flex: 1px;
+    display: inline-block;
+    margin-left: 50px;
+    width: 50%; 
+    max-width: 300px; 
+    height: auto; 
+    margin-top: 49px;
+    margin-left: 10px;
+}
+
+
+/*color de los textos*/
+.tutilo{
+    color: #332e54;
+}
+
+.subtitulo{
+    color: #aca9b9;
+}
+
+/*separacion de texto*/
+.nav{
+    margin-bottom: 100px;
+
+}
