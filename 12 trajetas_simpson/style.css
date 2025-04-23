@@ -1,5 +1,55 @@
 *{
     margin: 0px;
     padding: 0px;
-    /*outline: solid 1px navajowhite;*/
+    outline: solid 1px black;
+}
+
+.container{
+    margin: 0 auto;
+    width: 700px;
+    /*box-shadow: 0px 0px 5px 1px;*/
+
+}
+
+.foto_perfil{
+    text-align: center;
+    height: 150px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.nombre{
+    text-align: center;
+    height: 50px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+
+.tanjamanapio{
+    text-align: center;
+    height: 50px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+
+.fonasa{
+    text-align: center;
+    height: 50px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.conectores{
+    text-align: center;
+    height: 50px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: ;
 }
