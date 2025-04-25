@@ -14,6 +14,7 @@
 }
 
 .alcentro{
+    padding:30px;
     display: flex;
     flex-flow: column wrap;
     box-shadow: 0px 0px 5px 1px;
@@ -43,6 +44,7 @@
     text-align: center;
     margin-top: 2%;
     padding-bottom: 20px;
+    color: #464646;
     
 }
 
@@ -50,9 +52,11 @@
 .conectores{
     text-align: center;
     margin: 0 auto;
-    margin-top: 10px;
     padding-left: 10px;
     cursor: pointer;
+    font-size: 20px;
+    
+    
 }
 
 .button{
@@ -65,13 +69,15 @@
     margin: 0 auto;
     background-color: #3798dc;
     margin-top: 10px;
+    width: 50%;
+    transform: scale(120%)
+    
 }
 
 .foto_perfil{
     width: 150px;
     border-radius: 100%;
-    margin: -90px auto 20px;
-
+    margin: -110px auto -20px;
 
 }
 
