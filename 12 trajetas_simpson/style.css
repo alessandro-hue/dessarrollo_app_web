@@ -1,55 +1,80 @@
 *{
     margin: 0px;
     padding: 0px;
-    outline: solid 1px black;
+    /*outline: solid 1px black;*/
 }
 
 .container{
-    margin: 0 auto;
-    width: 700px;
-    /*box-shadow: 0px 0px 5px 1px;*/
-
+    margin: 60px auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.foto_perfil{
-    text-align: center;
-    height: 150px;
-    width: 100%;
-    margin: 0 auto;
-    margin-top: 40px;
+.alcentro{
+    display: flex;
+    flex-flow: column wrap;
+    box-shadow: 0px 0px 5px 1px;
+    margin: 40px auto;
+    
 }
-
 .nombre{
-    text-align: center;
-    height: 50px;
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5px;
+    padding-top: 20px;
+}
+.tu_mama{
     margin: 0 auto;
-    margin-top: 50px;
 }
 
-
-.tanjamanapio{
+.subtitulo{
     text-align: center;
-    height: 50px;
-    width: 100%;
-    margin: 0 auto;
-    margin-top: 10px;
+    color: #777777;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
 }
 
 
 .fonasa{
     text-align: center;
-    height: 50px;
-    width: 100%;
-    margin: 0 auto;
-    margin-top: 10px;
+    margin-top: 2%;
+    padding-bottom: 20px;
+    
 }
+
 
 .conectores{
     text-align: center;
-    height: 50px;
-    width: 100%;
     margin: 0 auto;
     margin-top: 10px;
-    margin-bottom: ;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.button{
+    border: 2px solid #00A5A5;
+    border-radius: 10px;
+    display: block;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 0 auto;
+    background-color: #3798dc;
+    margin-top: 10px;
+}
+
+.foto_perfil{
+    width: 150px;
+    border-radius: 100%;
+    margin: -90px auto 20px;
+
+
+}
+
+.help{
+    text-align: center;
 }
