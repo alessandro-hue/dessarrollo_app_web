@@ -1,35 +1,48 @@
 *{
     margin: 0;
     padding: 0;
-    outline: solid 1px red;
+   /* outline: solid 1px red;*/
 }
 
 .container{
+    background-color: rgb(226, 226, 226);
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     padding: 50px;
+    flex-wrap: wrap;
+
+}
+.conexiones{
+    display: flex;
+    flex-direction: column;
+    gap:20px; /* Sepera elementos con flex, respetando direccion*/
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
     
 }
-
-.row{
-display: flex;
-justify-content: space-between;
-align-items: center;
-margin-bottom: 10px; 
+.row p{
+    display: flex;
+    align-items: center;
+    gap:15px; /* Separa elementos pero con flex */
 }
-
 
 .row img{ 
     height: 30px;
 }
 
-button{
+.btn{
     cursor: pointer;
     color: #3899dc;
-    border-radius: 5px;
-    transform: scale(100%)
+    border-radius: 10px;
+    transform: scale(100%);
+    padding: 8px 20px;
+    font-size: 20px;
 }
 
 p{
@@ -37,3 +50,20 @@ p{
 }
 
 
+.extenciones{
+    
+    border-radius: 10 0px;
+    border: none;
+    padding: 0px;
+}
+
+.titulo{
+    margin-right: 30px;
+}
+
+
+.bloque{
+    padding:20px;
+    background-color: white;
+    border-radius: 15px;
+}
