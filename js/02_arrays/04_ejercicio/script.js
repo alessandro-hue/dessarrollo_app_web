@@ -10,7 +10,7 @@ arreglo. Muestra el resultado con un alert.
 
 function multiplicaPares() {
     let numeros= [10,1,2,3,4,5];
-    let multiplica= ( numeros[4]);
+    let multiplica= numeros[0]* numeros[2]* numeros[4];
     alert("la multiplicacion de sus pociciones sera el resultado: \n"
     +multiplica);
 }
