@@ -8,6 +8,8 @@ let texto= "hola mundo";
 let boolean= "verdadero_o_falso";
 let Numeros= " numeros arreglos";
 let Persona ="objetoPersona";
+let Indefinido = "valorIndefinido";
+
 
 //creacion de funcion numeroEntero, numero decimal
 
@@ -39,11 +41,20 @@ for (let i = 0; i < numeros.length; i++) {
 return suma;
 }
 
-function objetoPersona{
 
-
-    return "objetoPersona" 
+function crearPersona() {
+let persona = {
+    nombre: "Juan Pérez",
+    edad: 30
+};
+    return persona; 
 }
+
+function manejarDatosDePersona() 
+let persona = {
+    nombre: "Ana García",
+    edad: 28
+};
 
 //impresion de nose
 console.log(num)
@@ -51,4 +62,6 @@ console.log(decimal)
 console.log(texto)
 console.log(boolean)
 console.log(numeros)
+console.log(persona)
+console.log()
 
