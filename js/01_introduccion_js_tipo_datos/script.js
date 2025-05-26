@@ -9,6 +9,7 @@ let boolean= "verdadero_o_falso";
 let Numeros= " numeros arreglos";
 let Persona ="objetoPersona";
 let Indefinido = "valorIndefinido";
+let valornulo ="ValorNulo";
 
 
 //creacion de funcion numeroEntero, numero decimal
@@ -49,12 +50,14 @@ let persona = {
 };
     return persona; 
 }
+function obtenerValorIndefinido() {
 
-function manejarDatosDePersona() 
-let persona = {
-    nombre: "Ana García",
-    edad: 28
-};
+}
+
+function obtenerValorNulo() {
+  // Esta función devuelve explícitamente el valor 'null'.
+return null; 
+}
 
 //impresion de nose
 console.log(num)
@@ -63,5 +66,5 @@ console.log(texto)
 console.log(boolean)
 console.log(numeros)
 console.log(persona)
+console.log(ValorIndefinido)
 console.log()
-
