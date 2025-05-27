@@ -11,6 +11,7 @@ let Persona ="objetoPersona";
 let Indefinido = "valorIndefinido";
 let valornulo ="ValorNulo";
 let valorunico ="identificadorUnico";
+let Grande="numeroGrande";
 
 //creacion de funcion numeroEntero, numero decimal
 
@@ -60,6 +61,21 @@ return null;
 }
 
 
+function numeroGrande(numeros) {
+if (numeros.length === 0) {
+    return null;
+}
+
+let max = numeros[0];
+
+for (let i = 1; i < numeros.length; i++) {
+    if (numeros[i] > max) {
+    max = numeros[i];
+    }
+}
+
+return max;
+}
 
 
 //impresion de nose
@@ -72,4 +88,4 @@ console.log(Persona)
 console.log(Indefinido)
 console.log( valornulo)
 console.log(valorUnico)
-
+console.log(grande)
