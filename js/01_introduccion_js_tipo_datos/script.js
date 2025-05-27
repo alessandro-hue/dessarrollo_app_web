@@ -10,7 +10,7 @@ let Numeros= " numeros arreglos";
 let Persona ="objetoPersona";
 let Indefinido = "valorIndefinido";
 let valornulo ="ValorNulo";
-
+let valorunico ="identificadorUnico";
 
 //creacion de funcion numeroEntero, numero decimal
 
@@ -59,12 +59,17 @@ function obtenerValorNulo() {
 return null; 
 }
 
+
+
+
 //impresion de nose
 console.log(num)
 console.log(decimal)
 console.log(texto)
 console.log(boolean)
-console.log(numeros)
-console.log(persona)
-console.log(ValorIndefinido)
-console.log()
+console.log(Numeros)
+console.log(Persona)
+console.log(Indefinido)
+console.log( valornulo)
+console.log(valorUnico)
+
