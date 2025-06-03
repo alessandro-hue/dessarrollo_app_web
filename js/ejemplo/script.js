@@ -11,10 +11,17 @@ alert("el nuevo arreglo es:" + entrada.join("  "));
 }
 
 function usarPop(){
-
+    // elimina el ultimo elemento
+    let basurero = arrays.pop();
+    alert(`Elemento eliminado:${basurero}`);
 }
 
 function usarUnshift(){
-
+    //elimina el primer elemento
+    let basurero = arrays.unshift();
+    
 }
 
+function usarShift(){
+
+}
