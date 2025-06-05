@@ -1,4 +1,12 @@
+// crear un arreglo vacio llamado compras usan push 
+// para agregar los siguientes 
+// elementos: pan, leche, huevos muestra el arreglo resultando
 
+let compras =[]; //arreglo vacio
+function listaCompras(){
+    compras.push("pan", "leche", "huevos");
+    alert(`lista de compras: ${compras.join(" - ")}`);
+}
 
 
 // Creación de Arreglo
