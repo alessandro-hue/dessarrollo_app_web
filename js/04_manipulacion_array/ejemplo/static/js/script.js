@@ -1,19 +1,16 @@
-// creacion de Array
-
-let arrays =["Xbox","Nintendo" ];
-
-//creacion de funciones
+// Creación de Arreglo
+let array = ["Xbox","Nintendo"];
+//Creación de funciones
 function usarPush(){
-//agregar al final
-let entrada =prompt("agregar una consola")
-arrays.push(entrada)
-alert("el nuevo arreglo es:" + entrada.join("  "));
+// Agregar al final
+    let entrada = prompt("Agregar una consola de juego: ");
+    array.push(entrada);
+    alert("El nuevo arreglo es: " + array.join(" - "));
 }
-
 function usarPop(){
-    // elimina el ultimo elemento
-    let basurero = arrays.pop();
-    alert(`Elemento eliminado:${basurero}`);
+    //Elimina el último elemento
+    let basurero = array.pop();
+    alert(`Elemento eliminado: ${basurero}`);
 }
 function usarUnshift(){
     // Agregar al inicio
@@ -26,4 +23,3 @@ function usarShift(){
         let basurero = array.shift();
         alert(`Elemento eliminado: ${basurero}`);
 }
-
