@@ -7,12 +7,16 @@ function listaCompras(){
     compras.push("pan", "leche", "huevos");
     alert(`lista de compras: ${compras.join(" - ")}`);
 }
-function listacompras(){
-    //Elimina el último elemento
-    let basura = compras.pop();
-    alert(`Elemento eliminado: ${basura}`);
+
+
+//Ejercicio 2 
+
+function eliminarElemento(){
+    let compraEliminada= compras.pop();
+    alert(`Elemento eliminado: ${compraEliminada}`);
 }
 
+//ejercicio 3
 let colores=[];
 function listaColores(){
     colores.unshift("rojo", "azul");
@@ -20,8 +24,7 @@ function listaColores(){
     alert(`los nuevos colores: ${colores.join(" - ")}`);
 }
 
-let 
-
+//ejercicio 4
 
 
 // Creación de Arreglo
