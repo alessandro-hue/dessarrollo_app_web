@@ -92,9 +92,6 @@ function historialMensaje(){
 
 
 
-
-
-
 //ejercicio 8
 let cola =[" cliente1", "cliente2", "cliente3"]
 
