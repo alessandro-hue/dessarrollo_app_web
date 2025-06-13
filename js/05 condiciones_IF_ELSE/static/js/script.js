@@ -8,15 +8,15 @@ function mayorEdad() {
     let edad = parseInt(prompt("ingrese edad."));
 
     if (edad >= 18) {
-        document.getElementById("resultado").innerHTML =
+        document.getElementById("resultado1").innerHTML =
         `<p> Es mayor de edad: ${edad}</p>`;
 
     } else if (edad <= 17 && edad > 0) {
-        document.getElementById("resultado").innerHTML =
+        document.getElementById("resultado1").innerHTML =
         `<p> El valor<strong> ${edad}<strong> es valido.</p>`;
     }
     else {
-        document.getElementById("resultado").innerHTML =
+        document.getElementById("resultado1").innerHTML =
         `<p> Es menor de edad: ${edad}</p>`;
 
     }
@@ -34,17 +34,17 @@ function mostrarNuevoProducto() {
     let productos = ["pan", "leche", "queso"];
     let nuevoProducto = prompt("Ingrese un nuevo Producto");
     if (productos[0] == nuevoProducto) {
-        document.getElementById("resultado").innerHTML =
+        document.getElementById("resultado2").innerHTML =
             `<p>El producto: <strong>${nuevoProducto}</strong> ingresado.</p>`;
     } else if (productos[1] == nuevoProducto) {
-        document.getElementById("resultado").innerHTML =
+        document.getElementById("resultado2").innerHTML =
             `<p>El producto: <strong>${nuevoProducto}</strong> ingresado.</p>`;
     } else if (productos[2] == nuevoProducto) {
-        document.getElementById("resultado").innerHTML =
+        document.getElementById("resultado2").innerHTML =
             `<p>El producto: <strong>${nuevoProducto}</strong> ingresado.</p>`;
     } else {
         productos.push(nuevoProducto);
-        document.getElementById("resultado").innerHTML =
+        document.getElementById("resultado2").innerHTML =
             `<p>Nueva lista de productos: <strong>${productos.join(" - ")}</strong> ingresado.</p>`;
     }
 
@@ -54,10 +54,10 @@ function controlTareas() {
     let tareas = ["tarea1", "tarea2", "tarea3", "tarea4", "tarea5", "tarea6"];
     if (tareas.length > 5) {
         tareas.pop();
-        document.getElementById("resultado").innerHTML =
+        document.getElementById("resultado3").innerHTML =
         `<p>Tareas ajustadas: ${tareas.join(", ")}</p>`;
     } else {
-        document.getElementById("resultado").innerHTML =
+        document.getElementById("resultado3").innerHTML =
         `<p>Lista aceptable</p>`;
     }
 }
@@ -67,10 +67,10 @@ function validarCola() {
     let cola = ["sinNombre", "Pedro", "Lucia"];
     if (cola[0] === "sinNombre") {
         cola.shift();
-        document.getElementById("resultado").innerHTML =
+        document.getElementById("resultado4").innerHTML =
         `<p>Nuevo orden de cola: ${cola.join(", ")}</p>`;
     } else {
-        document.getElementById("resultado").innerHTML =
+        document.getElementById("resultado4").innerHTML =
         `<p>Cola correcta</p>`;
     }
 }
@@ -81,10 +81,10 @@ function saludoCondicional() {
     if (nombre.trim() !== "") {
         let saludos = [];
         saludos.push(`Hola, ${nombre}`);
-        document.getElementById("resultado").innerHTML =
+        document.getElementById("resultado5").innerHTML =
         `<p>${saludos[0]}</p>`;
     } else {
-        document.getElementById("resultado").innerHTML =
+        document.getElementById("resultado5").innerHTML =
         `<p>Nombre no valido</p>`;
     }
 }
@@ -93,11 +93,11 @@ function saludoCondicional() {
 function calificarNota() {
     let nota = parseFloat(prompt("Ingrese una nota entre 1 y 7:"));
     if (nota >= 6) {
-        document.getElementById("resultado").innerHTML = "<p>Excelente</p>";
+        document.getElementById("resultado6").innerHTML = "<p>Excelente</p>";
     } else if (nota >= 4) {
-        document.getElementById("resultado").innerHTML = "<p>Aprobado</p>";
+        document.getElementById("resultado6").innerHTML = "<p>Aprobado</p>";
     } else {
-        document.getElementById("resultado").innerHTML = "<p>Reprobado</p>";
+        document.getElementById("resultado6").innerHTML = "<p>Reprobado</p>";
     }
 }
 //✅ Ejercicio 7: Registro de visitantes
@@ -111,10 +111,10 @@ function registroVisitantes() {
     let persona = prompt("Ingrese su nombre:");
     if (persona.trim() !== "") {
         visitas.unshift(persona);
-        document.getElementById("resultado").innerHTML =
+        document.getElementById("resultado7").innerHTML =
         `<p>Visitas registradas: ${visitas.join(", ")}</p>`;
     } else {
-        document.getElementById("resultado").innerHTML =
+        document.getElementById("resultado7").innerHTML =
         "<p>Error: nombre vacío</p>";
     }
 }
@@ -132,10 +132,10 @@ function controlStock() {
     let stock = ["arroz", "fideos"];
     let productoSolicitado = prompt("Ingrese el producto:");
     if (stock.includes(productoSolicitado)) {
-        document.getElementById("resultado").innerHTML = "<p>Producto disponible</p>";
+        document.getElementById("resultado8").innerHTML = "<p>Producto disponible</p>";
     } else {
         stock.push(productoSolicitado);
-        document.getElementById("resultado").innerHTML = 
+        document.getElementById("resultado8").innerHTML = 
         `<p>Producto agregado al stock: ${stock.join(", ")}</p>`;
     }
 }
@@ -156,9 +156,9 @@ function verificarInvitado() {
     let invitados = ["Ana", "Luis", "Camila"];
     let persona = prompt("Ingrese su nombre:");
     if (invitados.includes(persona)) {
-        document.getElementById("resultado").innerHTML = `<p>Bienvenido, ${persona}</p>`;
+        document.getElementById("resultado9").innerHTML = `<p>Bienvenido, ${persona}</p>`;
     } else {
-        document.getElementById("resultado").innerHTML = "<p>No estas en la lista</p>";
+        document.getElementById("resultado9").innerHTML = "<p>No estas en la lista</p>";
     }
 }
 
@@ -176,9 +176,9 @@ function evaluarRol() {
     let rol = prompt("Ingrese el rol:");
     if (rol === "Admin") {
         usuarios.unshift(rol);
-        document.getElementById("resultado").innerHTML = "<p>Rol prioritario agregado</p>";
+        document.getElementById("resultado10").innerHTML = "<p>Rol prioritario agregado</p>";
     } else {
         usuarios.push(rol);
-        document.getElementById("resultado").innerHTML = "<p>Rol agregado</p>";
+        document.getElementById("resultado10").innerHTML = "<p>Rol agregado</p>";
     }
 }
