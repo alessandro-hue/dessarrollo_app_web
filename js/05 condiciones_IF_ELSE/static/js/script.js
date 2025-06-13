@@ -1,39 +1,54 @@
-// Ejercicio 1
-function mayoriaEdad(){
-    let edad = parseInt(prompt("Ingrese Edad: "));
-    if(edad >= 18){
+//✅ Ejercicio 1: Verificar mayoría de edad
+//Crea una variable edad con un valor numérico.
+//Si la edad es mayor o igual a 18, muestra "Acceso permitido".
+//Si no, muestra "Acceso denegado".
+
+
+function mayorEdad() {
+    let edad = parseInt(prompt("ingrese edad."));
+
+    if (edad >= 18) {
         document.getElementById("resultado").innerHTML =
-        `<p>Es mayor de Edad: ${edad} </p>`;
-    }else if (edad <= 17 && edad >= 0){
+        `<p> Es mayor de edad: ${edad}</p>`;
+
+    } else if (edad <= 17 && edad > 0) {
         document.getElementById("resultado").innerHTML =
-        `<p>Es menor de Edad: ${edad} </p>`;
-    } else {
+        `<p> El valor<strong> ${edad}<strong> es valido.</p>`;
+    }
+    else {
         document.getElementById("resultado").innerHTML =
-        `<p>El valor <strong>${edad}</strong> es invalido.</p>`;
+        `<p> Es menor de edad: ${edad}</p>`;
+
     }
 }
 
-// Ejercicio 2
-function mostrarNuevoProducto(){
+
+/* ✅ Ejercicio 2: Añadir producto si no está
+js
+let productos = ["pan", "leche", "queso"];
+
+Declara la variable nuevoProducto.
+Si productos no incluye el nuevo producto (agrégalo con push() y muestra el arreglo.
+Si ya está, muestra "Producto ya ingresado". */
+function mostrarNuevoProducto() {
     let productos = ["pan", "leche", "queso"];
     let nuevoProducto = prompt("Ingrese un nuevo Producto");
-    if (productos[0] == nuevoProducto){
+    if (productos[0] == nuevoProducto) {
         document.getElementById("resultado").innerHTML =
-        `<p>El producto: <strong>${nuevoProducto}</strong> ingresado.</p>`;
-    } else if(productos[1] == nuevoProducto){
+            `<p>El producto: <strong>${nuevoProducto}</strong> ingresado.</p>`;
+    } else if (productos[1] == nuevoProducto) {
         document.getElementById("resultado").innerHTML =
-        `<p>El producto: <strong>${nuevoProducto}</strong> ingresado.</p>`;
-    } else if(productos[2] == nuevoProducto){
+            `<p>El producto: <strong>${nuevoProducto}</strong> ingresado.</p>`;
+    } else if (productos[2] == nuevoProducto) {
         document.getElementById("resultado").innerHTML =
-        `<p>El producto: <strong>${nuevoProducto}</strong> ingresado.</p>`;
-} else{
+            `<p>El producto: <strong>${nuevoProducto}</strong> ingresado.</p>`;
+    } else {
         productos.push(nuevoProducto);
         document.getElementById("resultado").innerHTML =
-        `<p>Nueva lista de productos: <strong>${productos.join(" - ")}</strong> ingresado.</p>`;
-}
+            `<p>Nueva lista de productos: <strong>${productos.join(" - ")}</strong> ingresado.</p>`;
+    }
 
 }
-
 // Ejercicio 3
 function controlTareas() {
     let tareas = ["tarea1", "tarea2", "tarea3", "tarea4", "tarea5", "tarea6"];
@@ -146,6 +161,14 @@ function verificarInvitado() {
         document.getElementById("resultado").innerHTML = "<p>No estas en la lista</p>";
     }
 }
+
+//✅ Ejercicio 10: Evaluar rol de usuario
+//js
+//let usuarios = ["Admin", "Editor", "Invitado"];
+//Declara la variable rol.
+//Si rol === "Admin", agrégalo al inicio con unshift() y muestra "Rol prioritario agregado".
+//Si es otro rol, usa push() y muestra "Rol agregado".
+
 
 // Ejercicio 10
 function evaluarRol() {
