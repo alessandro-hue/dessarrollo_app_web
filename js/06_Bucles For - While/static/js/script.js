@@ -9,7 +9,7 @@ function contarHastaN() {
     //bucle for contar hasta N
     for (let i = 1; i <= n; i++) {
         numeros.push(i);
-        document.getElementById("resultado").innerHTML =
+        document.getElementById("resultado1").innerHTML =
             `<p> el conteo de 1 hasta ${n} es el siguiente</p> <br> <strong>${numeros.join(" - ")}</strong>`;
     }
 }
@@ -25,7 +25,7 @@ function sumarCincoNumeros() {
         suma += numero;
         contador++;
     }
-    document.getElementById("resultado1").innerHTML =
+    document.getElementById("resultado2").innerHTML =
         `<p> La suma de los 5 numeros es: <strong> ${suma} </strong> </p>`
 }
 
@@ -34,15 +34,15 @@ Usa un for para mostrar en pantalla solo los
 números pares del 1 al 20.
 */
 
-function mostrarPares(){
-        let pares=[];
-    for(let i=1; i <=20; i++){
-        if(i % 2 ===0){
+function mostrarPares() {
+    let pares = [];
+    for (let i = 1; i <= 20; i++) {
+        if (i % 2 === 0) {
             pares.push(i);
         }
     }
-    document.getElementById("resultado2").innerHTML=
-    `<p>Los numeros pares del 1 al 20 son : </p> <br> <strong>${pares.join("-")}</strong>;`
+    document.getElementById("resultado3").innerHTML =
+        `<p>Los numeros pares del 1 al 20 son : </p> <br> <strong>${pares.join("-")}</strong>;`
 
 }
 
@@ -52,28 +52,122 @@ cuenta regresivamente hasta 0. Si el número es menor que 0, muestra "Número no
 */
 
 function contadorRegresivo() {
-    let numero =parseFloat(prompt("ingresa un numero para contar regresivamente"));
-    
+    let numero = parseFloat(prompt("ingresa un numero para contar regresivamente"));
+
     if (numero < 0) {
-        document.getElementById("resultado3").innerHTML =`<P> Número no válido </p>`;
+        document.getElementById("resultado4").innerHTML = `<P> Número no válido </p>`;
     }
     else {
         let contador = numero;
-        let numeros =[];
-        while (contador > = 0) {
+        let numeros = [];
+        while (contador >= 0) {
             numeros.push(contador);
             contador--;
         }
-        document.getElementById("resultado3").innerHTML =
+        document.getElementById("resultado4").innerHTML =
             `<p> El conteo regresivo desde ${numero} es el siguiente: </p> <br> <strong>${numeros.join("- ")}</strong>`;
 
     }
 
 }
+
+
 /*✅ Ejercicio 5: Mostrar la tabla de multiplicar de un número
-Solicita al usuario un número y usa un for para mostrar su tabla de multiplicar del 1 al 10.
-/*
+Solicita al usuario un número y 
+usa un for para mostrar su tabla de multiplicar del 1 al 10.
+*/
 
 
-function mostrarTablamultiplicar() {
+function tablaMultiplicar() {
+    let numero = parseFloat(import(prompt("ingresa un numero para mostrar su tabla d emultiplicar")));
+    let tabla = [];
+    for (let i = 1; i <= 10; i++) {
+        let resultado = numero * i;
+        tabla.push(`${numero} x ${i} = ${resultado4}`);
+    }
+    document.getElementById("resultado5").innerHTML =
+        `<p> la tabla de multiplicar del ${numero} es: </p> <br> <strong>${tabla.join("<br>")}</strong>`;
 }
+
+/*✅ Ejercicio 6: Sumar hasta que se ingrese cero
+Con while, sigue pidiendo números con prompt() y súmalos, hasta que el usuario escriba 0. Muestra el total acumulado.
+*/
+
+function sumarHastaCero() {
+    let suma = 0;
+    let numero;
+    do  {
+        numero =parseFloat(prompt("ingresa un numero para sumar, o 0 para terminar"));
+        if (numero !== 0 ){
+            suma += numero;
+        }
+    } while (numero !== 0);
+    document.getElementById("resultado6").innerHTML =
+        `<P> El total acumulado es: <strong>${suma}</strong> </p>`;
+    }    
+
+/*✅ Ejercicio 7: Mostrar letras de una palabra
+Pide al usuario una palabra y usa un for para mostrar cada letra por separado en el HTML.
+*/
+
+function mostrarletrasPalabra() {
+    let palabra = prompt("ingresa una palabra");
+    let letras = [];
+    for (let i = 0; i < palabra.length; i++) {
+        letras.push(palabra[i]);
+    }   
+    document.getElementById("resultado7").innerHTML =
+        `<p> Las letras de la palabra "${palabra}" son: </p> <br> <strong>${letras.join(" -")}</strong>`;
+}
+
+/*✅ Ejercicio 8: Validar contraseña
+Pide una contraseña al usuario y sigue pidiendo con while hasta que escriba "admin123".
+Luego, muestra "Acceso concedido".
+*/
+
+function validarContrasena() {
+    let contrasena;
+    do {
+        contrasena = prompt("ingresa la contrasena");
+    }  while (contrasena !=="admin123");
+    document.getElementById("resultado8").innerHTML =`<p> acceso concedido </p>`;
+}
+
+
+/*✅ Ejercicio 9: Promedio de notas
+Pide con prompt() cuántas notas va a ingresar. Usa un for para pedir cada nota,
+calcula el promedio y lo muestra.*/
+
+function pormedioNotas() {
+    let cantidadNotas =parseFloat(prompt("¿cuantas notas vas a ingresar?"));
+    let suma = 0;
+    for (let i = 0; i < contidadNotas; i++) {
+        let nota = parseFloat(prompt(`ingresa la nota ${i + 1}`));
+        suma += nota;
+    }   
+    let promedio =suma / cantidadNotas;
+    document.getElementById("resultado9").innerHTML =
+    `<p> El promedio de las notas es: <strong>${promedio.toFixed(2)}</strong> </p>`;
+
+}
+
+
+/*✅ Ejercicio 10: Contar cuántos son mayores de edad
+Pide con prompt() cuántas personas vas a ingresar. Por cada persona, pide la edad y muestra al final cuántas son mayores de edad (18+).*/
+
+
+function contarMayoresEdad() {
+    let cantidadPersonas = parseInt(prompt("¿cuantas personas vas aingresar?"));
+    let mayoresEdad = 0;
+    for (let i = 0; i < cantidadPersonas; i++){
+        let edad = parseInt(prompt(`ingresa la edad de la personas ${i + 1}`));
+        if (edad >= 18) {
+            mayoresEdad++;
+        } 
+    }   
+    document.getElementById("resultado10").innerHTML =
+        `<p> El numero de personas mayores de edad es: <strong>${mayoresEdad}</strong> </p>`;
+
+}
+
+
