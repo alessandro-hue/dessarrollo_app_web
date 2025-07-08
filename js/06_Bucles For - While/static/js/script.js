@@ -125,7 +125,7 @@ Pide una contraseña al usuario y sigue pidiendo con while hasta que escriba "ad
 Luego, muestra "Acceso concedido".
 */
 
-function validarContrasena() {
+function validarContrasena() {  
     let contrasena;
     do {
         contrasena = prompt("ingresa la contrasena");
