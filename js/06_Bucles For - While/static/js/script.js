@@ -16,7 +16,7 @@ function contarHastaN() {
 
 /* Ejercicio 2: Suma de 5 números
 Con un while, pide 5 números al usuario (uno por uno con prompt()) y muestra la suma total en pantalla.*/
-
+            
 function sumarCincoNumeros() {
     let suma = 0;
     let contador = 0;
@@ -138,10 +138,10 @@ function validarContrasena() {
 Pide con prompt() cuántas notas va a ingresar. Usa un for para pedir cada nota,
 calcula el promedio y lo muestra.*/
 
-function pormedioNotas() {
+function promedioNotas() {
     let cantidadNotas =parseFloat(prompt("¿cuantas notas vas a ingresar?"));
     let suma = 0;
-    for (let i = 0; i < contidadNotas; i++) {
+    for (let i = 0; i < cantidadNotas; i++) {
         let nota = parseFloat(prompt(`ingresa la nota ${i + 1}`));
         suma += nota;
     }   
