@@ -153,7 +153,8 @@ function promedioNotas() {
 
 
 /*✅ Ejercicio 10: Contar cuántos son mayores de edad
-Pide con prompt() cuántas personas vas a ingresar. Por cada persona, pide la edad y muestra al final cuántas son mayores de edad (18+).*/
+Pide con prompt() cuántas personas vas a ingresar. 
+Por cada persona, pide la edad y muestra al final cuántas son mayores de edad (18+).*/
 
 
 function contarMayoresEdad() {
@@ -169,5 +170,14 @@ function contarMayoresEdad() {
         `<p> El numero de personas mayores de edad es: <strong>${mayoresEdad}</strong> </p>`;
 
 }
+
+/*🟦 Ejercicio 11: Repetir una palabra N veces
+📌 Solicita al usuario una palabra y un número usando prompt. Luego,
+crea una función que reciba ambos valores como parámetros, repita la palabra N veces utilizando un bucle,
+y retorne el resultado completo como una cadena de texto. Muestra el resultado con alert.
+*/
+
+
+
 
 
