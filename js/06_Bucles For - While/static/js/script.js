@@ -171,13 +171,3 @@ function contarMayoresEdad() {
 
 }
 
-/*🟦 Ejercicio 11: Repetir una palabra N veces
-📌 Solicita al usuario una palabra y un número usando prompt. Luego,
-crea una función que reciba ambos valores como parámetros, repita la palabra N veces utilizando un bucle,
-y retorne el resultado completo como una cadena de texto. Muestra el resultado con alert.
-*/
-
-
-
-
-
