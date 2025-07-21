@@ -31,6 +31,7 @@ document.getElementById("resultado1").textContent = resultadoFinal;
 los valores y retorne un mensaje indicando cuál número es mayor, menor o si son iguales. Muestra el mensaje 
 */
 
+
 function compararNumeros(num1, num2){
     if(num1 > num2){
         return `${num1} es mayor que ${num2}`;
@@ -40,3 +41,42 @@ function compararNumeros(num1, num2){
         return `${num1} es igual a ${num2}`;
     }
 }
+
+function mostrarComparacion(){
+    let input1 = document.getElementById("numComp1");
+    let input2 = document.getElementById("numComp2")
+    let num1 = parseInt(input1.value);
+    let num2 = parseInt(prompt("Ingrese otro número"));
+    let resultado = compararNumeros(num1, num2);
+    document.getElementById("resultado2").textContent = resultado;
+
+    if (isNaN(num1) || isNaN(num2)) {
+        alert("valor invalido, ingrese solo numeros");
+
+    }
+      input1.value = ""; // Limpiar la caja de texto
+      input1.focus() ; //
+      input2.value ="";
+  }
+
+/*🟦 Ejercicio 3: Verificar si un número es par o impar
+📌 Solicita un número usando input. Diseña una función que reciba ese número como parámetro, determine si es par o impar, 
+y retorne un mensaje con el resultado. Muestra ese mensaje al usuario  en html */
+
+
+
+function vereficarParImpar(numero){
+    if(numero % 2 === 0){
+        return `${numero} es un número par`;
+    } else {
+        return `${numero} es un número impar`;
+    }
+} 
+
+function mostrarParImpar(){
+    let input3 = document.getElementById("input3");
+    let numero = parseInt(input3.value);
+    let resultadoParImpar = vereficarParImpar(numero);
+    document.getElementById("resultado3").textContent = resultadoParImpar;
+}
+
