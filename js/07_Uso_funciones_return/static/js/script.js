@@ -80,6 +80,10 @@ function Pares() {
     document.getElementById("resultado3").textContent =
       "Valor invalido, Por favor ingrese un número válidos.";
       return;
+  }  (num % 2 > 0) {
+    document.getElementById("resultado3").textContent = "impar"
+  } else{
+    document.getElementById("resultado3").textContent = "par"
   }
 }
 
