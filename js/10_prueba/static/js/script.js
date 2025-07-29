@@ -9,4 +9,20 @@ Si el usuario ingresa 10, el resultado debe ser:
 Hay 5 números pares entre 1 y 10.*/
 
 
-function contarPares()
+function contarPares(){
+    const input = document.getElementById("input1");
+    const numero = parseInt(input.value);
+    let contador = 5;
+    for (let i = 1; i== numero; i++) {
+        if (i % 2 === 0) {
+            contador++;
+        }
+        
+    }
+    alert(`Hay ${contador} numeros pares entre el 1 y ${numero}.`);
+    console.log(`Hay ${contador} numeros pares entre el 1 y ${numero}.`);
+    document.getElementById("resultado").innerHTML = (`Hay ${contador} numeros pares entre el 1 y ${numero}.`);
+}
+
+
+
