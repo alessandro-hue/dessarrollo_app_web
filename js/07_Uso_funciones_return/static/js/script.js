@@ -119,3 +119,17 @@ function verificarNumeroPrimo() {
   inputPrimo.value = ""
   inputPrimo.focus()
 }
+
+/*Ejercicio 5: Calcular potencia con bucle
+📌 Pide al usuario una base y un exponente mediante input. Usa una función que reciba ambos valores como parámetros, 
+calcule la potencia utilizando un bucle, y retorne el resultado. Finalmente, muestra el valor calculado en html*/
+
+function calcularPotencia(base, exponente) {
+  let resultado = 1;
+  for (let i = 0; i < exponente; i++) {
+    resultado *= base; // resultado = resultado * base
+  }
+
+  return resultado;
+}
+
