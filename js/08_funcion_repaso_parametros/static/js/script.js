@@ -16,26 +16,21 @@ Números encontrados: 3, 6, 9
 
 
 function filtrarMultiples(limite, multiplo) {
-
-    let numeros = [];
+    let resultados = [];
     for (let i = 1; i <= limite; i++) {
         if (i % multiplo === 0) {
-            numeros.push(i);
-        }
+        resultados.push(i);
     }
-    return numeros;
+    }
+    return resultados;
 }
 
-function mostrarResultado(){
-    const limite = parseInt(document.getElementById("limite").value);
-    const multiplo = parseInt(document.getElementById("multiplo").value);
-    
-    if (isNaN(limite) || isNaN(multiplo)) {
-        document.getElementById("resultado").innerHTML = "Por favor, ingresa números válidos.";
-        return;
+    function mostrarResultados() {
+        const limite = parseInt(document.getElementById('limite').value);
+        const multiplo = parseInt(document.getElementById('multiplo').value);
+        const numerosFiltrados = filtrarMultiples(limite, multiplo);
+        document.getElementById('resultado').innerText = 
+                numerosFiltrados.length > 0 ? 
+            `Números encontrados: ${numerosFiltrados.join(', ')}` : 
+            'No se encontraron números.';
     }
-
-    const numerosEncontrados = filtrarMultiples(limite, multiplo);
-    document.getElementById("resultado").innerHTML = "Números encontrados: " + numerosEncontrados.join(", ");
-    
-}
