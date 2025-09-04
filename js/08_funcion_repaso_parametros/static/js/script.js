@@ -37,4 +37,5 @@ function mostrarResultado(){
 
     const numerosEncontrados = filtrarMultiples(limite, multiplo);
     document.getElementById("resultado").innerHTML = "Números encontrados: " + numerosEncontrados.join(", ");
+    
 }
