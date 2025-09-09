@@ -129,7 +129,6 @@ function calcularPotencia(base, exponente) {
   for (let i = 0; i < exponente; i++) {
     resultado *= base; // resultado = resultado * base
   }
-
   return resultado;
-}
 
+}

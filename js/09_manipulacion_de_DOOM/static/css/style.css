@@ -1,0 +1,93 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f4f8;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+/* Formulario */
+form {
+    max-width: 400px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Etiquetas y campos */
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+    color: #34495e;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/* Botones */
+.botones {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button[type="submit"] {
+    background-color: #27ae60;
+    color: white;
+}
+
+button[type="reset"] {
+    background-color: #e74c3c;
+    color: white;
+}
+
+/* Resultados */
+.resultado {
+    margin-top: 20px;
+    padding: 12px;
+    background: #ecf9ec;
+    border-left: 4px solid #2ecc71;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+.error {
+    margin-top: 20px;
+    padding: 12px;
+    background: #fdecea;
+    border-left: 4px solid #e74c3c;
+    color: #c0392b;
+    font-weight: bold;
+}
+
+.resumen {
+    margin-top: 10px;
+    padding: 10px;
+    background: #f6f6f6;
+    border-radius: 6px;
+    text-align: center;
+    color: #2c3e50;
+    font-size: 0.95em;
+}
