@@ -18,6 +18,20 @@ a {
     width: 100%;
 }
 
+.row{
+    display: flex;
+    gap: 20px;
+    
+}
+.flex-2{
+    flex:2 ;
+}
+.flex-1{
+    flex:1;
+}
+.box{
+    border: solid 4px black;
+}
 .top {
     background-color: #ccc;
     height: 60px;
@@ -25,6 +39,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 2%;
 }
 
 .title {
@@ -51,9 +66,30 @@ a {
     color: #fff;
 }
 
-.button{
-    background-color: yellow;
+.left{
+    height: 170px;
+    background: transparent;
+    margin-bottom: 2%;
+}
+
+.like{
+    background-color: rgb(255,217,102);
+    margin-top: 2%;
 }
 
 
+.definition-text{
+    margin-left: 30%;
+}
 
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+.add{
+    background-color:rgb(147,196,125) ;
+}
